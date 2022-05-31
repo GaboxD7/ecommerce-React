@@ -1,0 +1,11 @@
+.imagen-svg {
+
+    color: white !important;
+    background-color: white;
+    padding: 0.45rem;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: auto;
+    margin-right: 5rem;
+
+}
