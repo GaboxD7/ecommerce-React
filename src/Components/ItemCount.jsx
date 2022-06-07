@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './ItemCount.css';
+
 const ItemCount = ({value, max, onAdd}) => {
     console.log(value)
 
@@ -9,14 +10,14 @@ const [count, setCount] = useState(value);
 const restar = () => { 
 
 count > value ?  setCount(count - 1) : alert('No puedes quitar mas productos')
-  
-       
-  
 }
 const sumar = () => {
-
-count < max ? setCount(count + 1) :  alert('No puedes add mas producto');
-
+    if (count < max) {
+        setCount(count + 1);
+    } else {
+        alert('No puedes add mas producto');
+    }
+ 
 }
 const reset = () => {
     setCount(value);

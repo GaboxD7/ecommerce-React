@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './ItemListContainer.css' 
-export default function ItemListContainer () {
+import ItemList from './ItemList'
+const ItemListContainer = ({greting}) => {
+
+  const [bike, setBike] = useState([])
+
+
+  useEffect(() => {
+    fetch('https://rickandmortyapi.com/api/character')
+    
+    .then(res => res.json())
+    .then(res => setBike(res.results))
+    .catch(error => console.error('Error', error))
+
+  }, [])
+  
+console.log(bike)
   return (
-            <p className='container-bajo'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem officiis molestiae cum? Sequi eligendi fugiat eum, facilis nostrum facere iste impedit velit perspiciatis at quas beatae aspernatur, voluptatum corporis.</p>
+          <ItemList></ItemList>
     )   
 }
+
+export  default ItemListContainer
