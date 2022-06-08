@@ -3,7 +3,7 @@ import './ItemListContainer.css'
 import ItemList from './ItemList'
 
 
-const ItemListContainer = ({greting}) => {
+const ItemListContainer = ({gretting}) => {
 
   const [bikes, setBikes] = useState([])
 

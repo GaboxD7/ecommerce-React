@@ -9,7 +9,9 @@ import Navbar from './Components/Navbar.jsx';
 
 
 function App() {
+
 const [max, seTmax] = useState(10)
+
     const onAdd = (count) => {
 
      seTmax(max -count)
