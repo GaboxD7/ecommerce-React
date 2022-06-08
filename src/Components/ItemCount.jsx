@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './ItemCount.css';
 
 const ItemCount = ({value, max, onAdd}) => {
-    console.log(value)
+
 
 const [count, setCount] = useState(value);
 

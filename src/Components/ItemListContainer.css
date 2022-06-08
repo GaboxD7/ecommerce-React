@@ -1,4 +1,8 @@
-.container-bajo {
+/* .container-bajo {
     background-color: black;
     height: 450px;
-}
+} */
+.container-card {
+ 
+   border: 1px solid black;
+  }

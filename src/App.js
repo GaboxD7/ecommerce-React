@@ -12,12 +12,11 @@ function App() {
 const [max, seTmax] = useState(10)
     const onAdd = (count) => {
 
-console.log(max)
      seTmax(max -count)
      if(max > 0) {
       alert(`Agregaste ${count} productos `)
      } else {
-      console.log(max)
+
       alert(`No che pede `)
      }
 
@@ -31,8 +30,8 @@ console.log(max)
       value={1}
       max={max}
       onAdd={onAdd}></ItemCount>
-      <ItemListContainer/>
-              </header>
+      </header>
+      <ItemListContainer />
     </div>
   );
 }

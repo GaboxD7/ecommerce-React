@@ -1,14 +1,24 @@
 import React from 'react'
+import './Item.css'
+
 // import ItemList from './ItemList'
-const Item = (bikes) => {
+
+
+const Item = ({bike}) => {
+  console.log(bike)
+  const {name, image, species, status} = bike
+console.log(image)
   return (
-<div className="card">
-    <img src="" alt="Avatar"  />
-    <div className="container">
-      <h4><b>{bikes.name}</b></h4>
-      <p>Architect & Engineer</p>
+<div className="cardd">
+    <img src={image} alt="Avatar"  />
+    <div className="container-contenido">
+      <h6><b>{name}</b></h6>
+      <p>Estado: {status}</p>
+      <p>Especie: {species}</p>
     </div>
+
   </div>
+
   )
 }
 
