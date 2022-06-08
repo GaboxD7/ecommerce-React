@@ -30,9 +30,9 @@ console.log(bikes)
 
   return (
 
-    <div className='container-card'>
-      <div className='container '>
-       <div className='row flex-row' >
+    <div className='dd'>
+      <div className='container container-card'>
+       <div className='row justify-content-center flex-wrap' >
        <ItemList bikes={bikes} />
        </div>
           

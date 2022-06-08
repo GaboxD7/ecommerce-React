@@ -3,6 +3,10 @@
     height: 450px;
 } */
 .container-card {
- 
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; */
    border: 1px solid black;
   }
