@@ -9,7 +9,7 @@ const Item = ({bike}) => {
   const {name, image, species, status} = bike
 console.log(image)
   return (
-    <div className='col-3'>
+    <div className='col-12 col-sm-6 col-md-6 col-lg-3'>
         <div className="cardd">
         <img src={image} alt="Avatar"  />
         <div className="container-contenido">
