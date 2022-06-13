@@ -3,10 +3,9 @@ import './ItemListContainer.css'
 import ItemList from './ItemList'
 
 
-const ItemListContainer = ({gretting}) => {
+const ItemListContainer = () => {
 
   const [bikes, setBikes] = useState([])
-
 
   useEffect(() => {
 
@@ -14,24 +13,22 @@ const ItemListContainer = ({gretting}) => {
     setTimeout(() => {
       
       
-    fetch('https://rickandmortyapi.com/api/character')
+    fetch('./productos.json')
     
     .then(res => res.json())
-    .then(res => setBikes(res.results))
+
+
+    .then(data => setBikes(data.productos))
     .catch(error => console.error('Error', error))
-     }, 2000);
+    
+     }, 3000);
+ 
   }, [])
-
-
-
-
-console.log(bikes)
-
 
   return (
 
-    <div className='dd'>
-      <div className='container container-card'>
+    <>
+      <div className='container'>
        <div className='row justify-content-center flex-wrap' >
        <ItemList bikes={bikes} />
        </div>
@@ -39,7 +36,7 @@ console.log(bikes)
         
       </div>
      
-    </div>
+    </>
         
     )   
 

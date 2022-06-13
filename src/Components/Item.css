@@ -1,11 +1,11 @@
 .cardd {
 
     /* Add shadows to create the "card" effect */
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+/* 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: 0.3s;
 
-    margin: 2.5rem 1.5rem;
+    margin: 1rem 0.5rem;
 
  
 }
@@ -13,16 +13,81 @@
   
   /* On mouse-over, add a deeper shadow */
   .cardd:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
   }
   
   /* Add some padding inside the card container */
   .container-contenido {
 
-    padding: 2px 16px;
+    padding: 0px 1rem;
+
 
   }
-  img {
-      height: 12rem;
-      width:100%;
+  .container-contenido p {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
   }
+  img {
+      height: 100%;
+      width:100%;
+      padding: 0.5rem;
+
+  }
+  
+.contenedor-count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  flex-wrap: wrap;
+  width: 100%;
+  /* padding: 0.75rem; */
+
+}
+.contenedor-btn-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: solid gray 1px;
+  margin:  0.5rem  0;
+  width: 100%;
+
+
+}
+.contenedor-btn-count button {
+  padding: 0rem 0.5rem;
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+
+  font-weight: 400;
+
+}
+.contenedor-btn-count button:hover {
+  color:darkcyan;
+  font-weight: bolder;
+
+}
+.contenedor-btn-count h2 {
+  height:fit-content;
+  width: fit-content;
+  font-size: 1.25rem;
+  /* padding: 0 0.5rem; */
+}
+
+.btn-agregar {
+  border: solid gray 1px;
+  background-color:white;
+  width: 100%;
+ color: black;
+ font-size: 600;
+
+ padding: 0.25rem;
+}
+.btn-agregar:hover {
+background-color: black;
+color: white;
+}
