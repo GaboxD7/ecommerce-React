@@ -1,19 +1,22 @@
 import React from 'react'
-import Zoom from 'react-img-zoom'
+import Zoom  from 'react-img-zoom'
+
 import './ItemDetaill.css'
 
 const ItemDetaill = ({item}) => {
 
-// console.log(imagenBike)
-const {price, color, brand, model, category, weight, image} = item
+const {price, color, brand, model, category, weight, image, zoom} = item
 
+console.log(!image?  image : image)
+console.log(zoom)
   return (
 
       <section className='container'>
         <div className='row container-detail'>
           <div className='col-5 img-detalle'>
           <Zoom
-              img={"/images/trek-powerfly-4-2022-.jpg"}
+              img={image}
+          
               zoomScale={3}
               width={600}
               height={500}
@@ -31,6 +34,7 @@ const {price, color, brand, model, category, weight, image} = item
             <h2>$ {price}</h2>
             <h6>Color: {color}</h6>
             <h6>Peso: {weight} Kg</h6>
+            <p>{image}</p>
             <div className='container-add-carro'>
                 <div className='container-boton'>
                   <button>-</button>

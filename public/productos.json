@@ -12,7 +12,8 @@
         "weight": "23.37",
         "image": "/images/trek-powerfly-4-2022-.jpg",
         "cantidad": 12,
-        "category": "MONTAÑA"
+        "category": "MONTAÑA",
+        "zoom": 3
       },
       { 
         "id": 2,

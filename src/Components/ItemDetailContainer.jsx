@@ -8,18 +8,16 @@ const ItemDetailContainer = () => {
     useEffect(() => {
   
   
-      setTimeout(() => {
+      // setTimeout(() => {
         
         
       fetch('./productos.json')
       
       .then(res => res.json())
-  
-  
       .then(data => setItem(data.productos[0]))
       .catch(error => console.error('Error', error))
       
-       }, 2000);
+      //  }, 2000);
    
     }, [])
 
