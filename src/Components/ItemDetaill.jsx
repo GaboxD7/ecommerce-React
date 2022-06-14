@@ -5,10 +5,8 @@ import './ItemDetaill.css'
 
 const ItemDetaill = ({item}) => {
 
-const {price, color, brand, model, category, weight, image, zoom} = item
+const {price, color, brand, model, category, weight, image} = item
 
-console.log(!image?  image : image)
-console.log(zoom)
   return (
 
       <section className='container'>
@@ -34,7 +32,6 @@ console.log(zoom)
             <h2>$ {price}</h2>
             <h6>Color: {color}</h6>
             <h6>Peso: {weight} Kg</h6>
-            <p>{image}</p>
             <div className='container-add-carro'>
                 <div className='container-boton'>
                   <button>-</button>

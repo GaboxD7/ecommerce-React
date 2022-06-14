@@ -12,8 +12,8 @@
         "weight": "23.37",
         "image": "/images/trek-powerfly-4-2022-.jpg",
         "cantidad": 12,
-        "category": "MONTAÑA",
-        "zoom": 3
+        "category": "MONTAÑA"
+
       },
       { 
         "id": 2,
@@ -24,7 +24,7 @@
         "size": "L",
         "price": "3.412.400",
         "speeds": "20",
-        "peso": "14.11",
+        "weight": "14.11",
         "image": "/images/trek-marlin-6-2020-.jpg",
         "cantidad": 10,
         "category": "URBANA"
@@ -38,7 +38,7 @@
         "size": "S",
         "price": "699.900",
         "speeds": "30",
-        "peso": "13.20",
+        "weight": "13.20",
         "image": "/images/trek-marlin-6-2021-.jpg",
         "cantidad": 10,
         "category": "URBANA"
@@ -52,7 +52,7 @@
         "size": "XS",
         "price": "599.900",
         "speeds": "20",
-        "peso": "13.97",
+        "weight": "13.97",
         "image": "/images/trek-marlin-5-2022-.jpg",
         "cantidad": 10,
         "category": "URBANA"
@@ -66,7 +66,7 @@
         "size": "XS",
         "price": "699.900",
         "speeds": "20",
-        "peso": "14.37",
+        "weight": "14.37",
         "image": "/images/trek-marlin-6-wsd-2021-.jpg",
         "cantidad": 10,
         "category": "MONTAÑA"
@@ -80,7 +80,7 @@
         "size": "XS",
         "price": "699.900",
         "speeds": "20",
-        "peso": "14.37",
+        "weight": "14.37",
         "image": "/images/trek-marlin-6-wsd-2021-.jpg",
         "cantidad": 10,
         "category": "MONTAÑA"
@@ -94,7 +94,7 @@
         "size": "XS",
         "price": "349.900",
         "speeds": "10",
-        "peso": "15",
+        "weight": "15",
         "image": "/images/altitude-mtb-kawell-3.jpg",
         "cantidad": 10,
         "category": "URBANA"
@@ -108,7 +108,7 @@
         "size": "M",
         "price": "429.900",
         "speeds": "20",
-        "peso": "16.6",
+        "weight": "16.6",
         "image": "/images/altitude-mtb-kawell-4-hombre.jpg",
         "cantidad": 10,
         "category": "MONTAÑA"
@@ -122,7 +122,7 @@
         "size": "S",
         "price": "429.990",
         "speeds": "20",
-        "peso": "15.8",
+        "weight": "15.8",
         "image": "/images/altitude-mtb-kuden-4-mujer.jpg",
         "cantidad": 10,
         "category": "MONTAÑA"
@@ -136,7 +136,7 @@
         "size": "S",
         "price": "249.990",
         "speeds": "20",
-        "peso": "16",
+        "weight": "16",
         "image": "/images/altitude-infinity-urbana.jpg",
         "cantidad": 10,
         "category": "URBANA"
@@ -150,7 +150,7 @@
         "size": "S",
         "price": "249.990",
         "speeds": "20",
-        "peso": "16",
+        "weight": "16",
         "image": "/images/altitude-infinity-urbana-2.jpg",
         "cantidad": 10
       },
