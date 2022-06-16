@@ -1,12 +1,11 @@
 import React from 'react'
 import Item from './Item'
 
-const ItemList = ({bikes, onAdd}) => {
-
+const ItemList = ({bikes}) => {
 
   return (
     <>
-        {bikes?.map(bike => <Item key={bike.id} bike={bike} onAdd={onAdd} value={1} /> )}
+        {bikes?.map(bike => <Item key={bike.id} bike={bike}    value={1} /> )}
     </>
   )
 }

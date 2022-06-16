@@ -1,11 +1,10 @@
 import React from 'react'
 import './Item.css'
  import { useState } from 'react';
-
+ import {Link } from "react-router-dom"
 
 
 const Item = ({bike, value}) => {
-
 
 
   const [count, setCount] = useState(value);
@@ -50,8 +49,8 @@ const onAdd = (count) => {
   }
 
 
-  const {name, image, brand, model, price, } = bike
-console.log(image)
+  const {name, image, brand, model, price, id } = bike
+
   return (
     <div className='col-12 col-sm-6 col-md-4 col-lg-3'>
       <div className="cardd">
@@ -61,7 +60,7 @@ console.log(image)
             <p>Precio: {` $ ${price} `} </p>
             <p>{brand} {model}</p>
           </div>
-         <div className='contenedor-count'>
+         {/* <div className='contenedor-count'>
                 <div className='contenedor-btn-count'>
                     <button 
                     onClick={restar}>-</button> 
@@ -76,7 +75,8 @@ console.log(image)
            
                        >AGREGAR AL CARRITO
                   </button>
-            </div>
+            </div> */}
+            <Link to={`/item/${id}`} className="btn-ver text-center">VER DETALLES</Link>
       </div>
     </div>
   

@@ -152,7 +152,8 @@
         "speeds": "20",
         "weight": "16",
         "image": "/images/altitude-infinity-urbana-2.jpg",
-        "cantidad": 10
+        "cantidad": 10,
+        "category": "MONTAÑA"
       },
       {
         "id": 12,

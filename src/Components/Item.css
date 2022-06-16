@@ -20,7 +20,7 @@
   .container-contenido {
 
     padding: 0px 1rem;
-
+ 
 
   }
   .container-contenido p {
@@ -90,4 +90,20 @@
 .btn-agregar:hover {
 background-color: black;
 color: white;
+}
+.btn-ver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:  none;
+  text-decoration: none;
+  /* border-radius: 0.25rem; */
+  padding: 0.25rem;
+  background-color: black;
+  color: white;
+  
+}
+.btn-ver:hover {
+  color: white;
+  background-color: gray;
 }

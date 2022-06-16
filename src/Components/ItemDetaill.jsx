@@ -14,7 +14,6 @@ const {price, color, brand, model, category, weight, image} = item
           <div className='col-5 img-detalle'>
           <Zoom
               img={image}
-          
               zoomScale={3}
               width={600}
               height={500}
