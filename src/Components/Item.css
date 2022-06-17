@@ -23,9 +23,15 @@
  
 
   }
-  .container-contenido p {
+  .p-model {
     margin-bottom: 0.5rem;
     font-weight: 600;
+    font-size: 1rem;
+  }
+  .p-categoria {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.75rem;
   }
   img {
       height: 100%;
