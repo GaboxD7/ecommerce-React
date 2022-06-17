@@ -1,0 +1,51 @@
+.contenedor-count {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.container-boton {
+    display: flex;
+    flex-direction: row;
+
+}
+.container-boton::before {
+    content: "CANTIDAD:";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    font-weight: bolder;
+}
+.container-boton button {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding:  0.5rem ;
+    /* padding: 0rem 0.25rem; */
+}
+.container-boton h2 {
+    padding: 0rem 1.5rem;
+}
+.container-add-carro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.agregar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.agregar button {
+background-color: black;
+border: none;
+color: white;
+border-radius: 0.5rem;
+padding: 0.75rem;
+}

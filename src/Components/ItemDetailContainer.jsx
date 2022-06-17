@@ -9,17 +9,17 @@ const ItemDetailContainer = () => {
   //  const [result, setResult] = useState()
 
   useEffect(() => {
-    // setTimeout(() => {
+    setTimeout(() => {
 
     fetch('../../productos.json')
       .then((res) => res.json())
  
-      .then((data) => setItem(data.productos.find(prod => prod.id == id)))
+      .then((data) => setItem(data.productos.find(prod => prod.id === parseInt(id))))
 
       // .then((result => setItem(result)))
       .catch((error) => console.error("Error", error));
 
-    //  }, 2000);
+     }, 1000);
   }, [id]);
 
 

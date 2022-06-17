@@ -1,11 +1,11 @@
 import React from 'react'
 import Zoom  from 'react-img-zoom'
-
+import ItemCount from './ItemCount'
 import './ItemDetaill.css'
 
 const ItemDetaill = ({item}) => {
 
-const {price, color, brand, model, category, weight, image} = item
+const {price, color, brand, model, category, weight, image, cantidad} = item
 
   return (
 
@@ -31,22 +31,23 @@ const {price, color, brand, model, category, weight, image} = item
             <h2>$ {price}</h2>
             <h6>Color: {color}</h6>
             <h6>Peso: {weight} Kg</h6>
-            <div className='container-add-carro'>
+            {/* <div className='container-add-carro'>
                 <div className='container-boton'>
                   <button>-</button>
                   <h2>1</h2>
                   <button>+</button>
-                </div>
-                <div className='agregar'>
+                </div> */}
+                <ItemCount cantidad={cantidad} inicial={1} />
+                {/* <div className='agregar'>
                   <button>AGREGAR AL CARRITO</button>
-                </div>
+                </div> */}
             </div>
             </div>
 
 
           
           </div>
-        </div>
+        {/* </div> */}
       </section>
 
    

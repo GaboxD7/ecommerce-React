@@ -15,7 +15,7 @@ const ItemListContainer = () => {
   useEffect(() => {
 
 
-    // setTimeout(() => {
+    setTimeout(() => {
       
       
     fetch('../../productos.json')
@@ -24,16 +24,17 @@ const ItemListContainer = () => {
     .then(data => setBikes(data.productos))
     .catch(error => console.error('Error', error))
     
-    //  }, 3000);
+     }, 200);
  
   }, [])
 
   useEffect(() => {
+    !id ? setResultado(bikes) : setResultado(bikes.filter((bike) => bike.category  === id))
 
-  if(id) {
-    let filtrados = bikes.filter((bike) => bike.category  === id)
-    setResultado(filtrados)
-  }
+  // if(id) {
+  //   let filtrados = 
+  //   setResultado(filtrados)
+  // }
      
 
   },[id, bikes])
@@ -43,7 +44,7 @@ console.log(resultado)
     <>
       <div className='container'>
        <div className='row justify-content-center flex-wrap' >
-         {resultado !== undefined ?   <ItemList bikes={resultado} /> :  <ItemList bikes={bikes}  /> }
+       <ItemList bikes={resultado}  /> 
      
        </div>
           
