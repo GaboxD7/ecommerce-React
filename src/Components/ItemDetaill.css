@@ -42,3 +42,23 @@
     margin: 0 1rem;
     padding: 0.25rem;
  }
+.container-terminar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ .terminar-compra {
+ 
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    text-decoration: none;
+ }
+ .terminar-compra:hover {
+    color: white;
+
+ }
+

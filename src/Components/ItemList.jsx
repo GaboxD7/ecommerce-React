@@ -5,7 +5,7 @@ const ItemList = ({bikes}) => {
 
   return (
     <>
-        {bikes?.map(bike => <Item key={bike.id} bike={bike}    value={1} /> )}
+        {bikes?.map(bike => <Item key={bike.id} bike={bike}  /> )}
     </>
   )
 }

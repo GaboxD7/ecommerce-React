@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './ItemListContainer.css' 
 import ItemList from './ItemList'
 import { useParams } from 'react-router-dom'
-import Navbar from './Navbar'
+
 
 
 const ItemListContainer = () => {
@@ -38,7 +38,7 @@ const ItemListContainer = () => {
      
 
   },[id, bikes])
-console.log(resultado)
+
   return (
 
     <>
