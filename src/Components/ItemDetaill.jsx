@@ -4,16 +4,23 @@ import { useState } from 'react'
 import Zoom  from 'react-img-zoom'
 import ItemCount from './ItemCount'
 import './ItemDetaill.css'
+import { CartContext } from '../context/CartContext';
+import { useContext } from 'react';
 
 const ItemDetaill = ({item}) => {
 
   const [quantities, setQuantities] = useState(0)
+  // Consumiendo  Provider
+  const { isInCart, addItem } = useContext(CartContext)
 
   const onAdd = (count) => {
   
     setQuantities(count)
       
       alert(`Agregaste ${count} productos `)
+      isInCart(item.id)
+      addItem(item, count
+         )
  
       
 

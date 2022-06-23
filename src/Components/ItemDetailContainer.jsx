@@ -9,6 +9,7 @@ const ItemDetailContainer = () => {
   //  const [result, setResult] = useState()
 
   useEffect(() => {
+    
     setTimeout(() => {
 
     fetch('../../productos.json')

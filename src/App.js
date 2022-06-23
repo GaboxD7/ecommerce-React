@@ -13,6 +13,7 @@ import	{
 
 import Navbar from './Components/Navbar.jsx';
 import Cart from './Components/Cart';
+import MyProvider from './context/CartContext'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       
       <BrowserRouter>
+      <MyProvider>
         <header className="App-header">
         <Navbar></Navbar>
         </header>
@@ -31,9 +33,9 @@ function App() {
           <Route path="item/:id" element={<ItemDetailContainer />} ></Route>
           <Route path= "cart/" element={<Cart />}> </Route>
         </Routes>
+        </MyProvider>
       </BrowserRouter>
-
-
+      
     </div>
   );
 }
