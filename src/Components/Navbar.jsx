@@ -32,9 +32,8 @@ const Navbar = () => {
                     <a className="nav-link disabled" href="#!" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                
-                   
                 </ul>
-                <li> <CartWidget  /></li>
+                <li> <Link to={'/cart'} ><CartWidget  /></Link></li>
                 <form className="d-flex">
                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                     <button className="btn btn-outline-success bg-dark" type="submit">Search</button>

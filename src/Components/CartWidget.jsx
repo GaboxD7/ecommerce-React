@@ -2,14 +2,16 @@ import React from 'react'
 import { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import './CartWidget.css' 
+import { BiShoppingBag } from "react-icons/bi";
 export default function CartWidget() {
 
     const {getItemQty} = useContext(CartContext)
+    
 
   return (
    
-    <div contador={getItemQty()} >
-    <svg className='imagen-svg'  xmlns="http://www.w3.org/2000/svg" 
+    < >
+    {/* <svg className='imagen-svg'  xmlns="http://www.w3.org/2000/svg" 
     viewBox="0 0 24 24" 
     width="25" 
     height="25">
@@ -18,8 +20,11 @@ export default function CartWidget() {
             <circle cx="7" cy="22" r="2"/>
             <circle cx="17" cy="22" r="2"/>
         </g>
-    </svg>
-    </div>
+       
+    </svg> */}
+    <BiShoppingBag style={{color:'white', fontSize:'2rem', marginRight:'1rem'}} />
+    <span className='bolsa'>{getItemQty() > 0 && getItemQty()}</span>
+    </>
 
 
 

@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import Zoom from "react-img-zoom";
+
 
 export const CartContext = createContext()
 
@@ -10,50 +10,55 @@ const {Provider} = CartContext;
 
     const [cart, setCart] = useState([])
 
-    // ItemDetail - Si el producto a dd, esta en el carrito
+    // ItemDetail - Si el producto a dd, esta en el carrito o no, Retorna boolean
     const isInCart = (id) => {
         return cart.some(x => x.id === id)
     }
 
-    // ItemDetail - Agregara producto al cart, sin pisar a los agregados y su duplicado (cantidad)
-    const addItem = (item, qty) => {
+    // ItemDetail - Agregara producto seleccioando al cart, sin pisar a los agregados y si es  duplicado auementa (cantidad)
+    const addItem = (item, quantities) => {
         const newItem = {
             ...item, 
-            qty
+            quantities
         }
 
     if (isInCart(newItem.id)) {
 
         const findProduct = cart.find(x => x.id === newItem.id)
         const produtIndex = cart.indexOf(findProduct)
-        const auxArray = [... cart]
-        auxArray[produtIndex].qty += qty
+        const auxArray = [...cart]
+        auxArray[produtIndex].quantities += quantities
         setCart(auxArray)
 
              
     } else {
-        setCart([...cart], newItem)
+        setCart([...cart, newItem])
     }
     }
-    // Vaciar el Carrito - Cart - voton
+
+    // Vaciar el Carrito - Cart - Boton
+
     const emptyCart = () => {
         setCart([])
     }
 
     // Cart - Cart -nvo array sin el producto seleccionado
+
     const deleteItem = (id) => {
 
         return setCart(cart.filter(x => x.id !== id))
-       
-        
+    
     }
 
     // Metodo Reduce  CartWidget. Retornara la cantidad total de unidades que tiene nuestro state  cart 
+
     const getItemQty = () => {
-        return cart.reduce((acc, x) => acc += x.qty, 0)
+        return cart.length
+        // reduce((acc, x) => acc += x.quantities, 0)
     }
 
     // Cart - Retorna e precio total de carrito
+
     const getItemPrice = () => {
         return cart.reduce((acc, x) => acc += x.qty * x.price, 0)
     }

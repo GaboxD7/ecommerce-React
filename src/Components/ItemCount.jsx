@@ -38,7 +38,7 @@ const ItemCount =  ({cantidad, inicial, onAdd}) => {
                     <button 
                       //  disabled={validarAgregar()}
                        onClick={() => {onAdd(count);  reset() }  }
-           
+      
                        >AGREGAR AL CARRITO
                   </button>
             </div> 

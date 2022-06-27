@@ -19,10 +19,7 @@ const ItemDetaill = ({item}) => {
       
       alert(`Agregaste ${count} productos `)
       isInCart(item.id)
-      addItem(item, count
-         )
- 
-      
+      addItem(item, count )  
 
     }
   
