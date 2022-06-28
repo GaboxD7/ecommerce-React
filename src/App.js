@@ -13,7 +13,7 @@ import	{
 
 import Navbar from './Components/Navbar.jsx';
 import Cart from './Components/Cart';
-import MyProvider from './context/CartContext'
+import MyProvider from './Components/context/CartContext';
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       <BrowserRouter>
       <MyProvider>
         <header className="App-header">
-        <Navbar></Navbar>
+        <Navbar />
         </header>
         <Routes>
           <Route path="/" element={<ItemListContainer />} ></Route>

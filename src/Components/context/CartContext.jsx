@@ -60,10 +60,10 @@ const {Provider} = CartContext;
     // Cart - Retorna e precio total de carrito
 
     const getItemPrice = () => {
-        return cart.reduce((acc, x) => acc += x.qty * x.price, 0)
+        return cart.reduce((acc, x) => acc += x.quantities * x.price.replace(/[.]/g,''), 0)
     }
 
-
+console.log(getItemPrice)
     return <Provider value={{cart, isInCart, addItem, deleteItem, emptyCart, getItemQty, getItemPrice}}>{children}</Provider>
 }
  

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { CartContext } from '../context/CartContext'
+import { CartContext } from './context/CartContext'
 import './CartWidget.css' 
 import { BiShoppingBag } from "react-icons/bi";
 export default function CartWidget() {

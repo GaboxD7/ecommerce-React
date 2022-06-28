@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Zoom  from 'react-img-zoom'
 import ItemCount from './ItemCount'
 import './ItemDetaill.css'
-import { CartContext } from '../context/CartContext';
+import { CartContext } from './context/CartContext';
 import { useContext } from 'react';
 
 const ItemDetaill = ({item}) => {

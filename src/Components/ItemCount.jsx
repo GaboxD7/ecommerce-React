@@ -26,8 +26,9 @@ const ItemCount =  ({cantidad, inicial, onAdd}) => {
     }
 
   return (
+    onAdd !== undefined ?
           <div className='contenedor-count'>
-                <div className='container-boton'>
+                <div className='container-boton container-boton-lista'>
                     <button 
                     onClick={restar}>-</button> 
                     <h2>{count}</h2>
@@ -43,6 +44,15 @@ const ItemCount =  ({cantidad, inicial, onAdd}) => {
                   </button>
             </div> 
             </div> 
+            :         <div className='contenedor-count'>
+                      <div className='container-boton'>
+                <button 
+                onClick={restar}>-</button> 
+                <h2>{count}</h2>
+                <button 
+                onClick={sumar}>+</button>
+            </div>
+            </div>
   )
 }
 
