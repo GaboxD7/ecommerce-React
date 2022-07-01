@@ -53,17 +53,17 @@ const {Provider} = CartContext;
     // Metodo Reduce  CartWidget. Retornara la cantidad total de unidades que tiene nuestro state  cart 
 
     const getItemQty = () => {
-        return cart.length
-        // reduce((acc, x) => acc += x.quantities, 0)
+        // return cart.length
+        return  cart.reduce((acc, x) => acc += x.quantities, 0)
     }
 
     // Cart - Retorna e precio total de carrito
 
     const getItemPrice = () => {
-        return cart.reduce((acc, x) => acc += x.quantities * x.price.replace(/[.]/g,''), 0)
+        return cart.reduce((acc, x) => acc += x.quantities * x.price, 0)
     }
 
-console.log(getItemPrice)
+
     return <Provider value={{cart, isInCart, addItem, deleteItem, emptyCart, getItemQty, getItemPrice}}>{children}</Provider>
 }
  

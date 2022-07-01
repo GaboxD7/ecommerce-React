@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
+import Categories from './Categories';
+
 import'./Navbar.css';
 const Navbar = () => {
     return (
@@ -22,9 +24,7 @@ const Navbar = () => {
                         CATEGORIA
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><Link to={`/category/${'MONTAÑA'}`} className="dropdown-item">MONTAÑA</Link></li>
-                    <li><Link to={`/category/${'URBANA'}`} className="dropdown-item">URBANA</Link></li>
-                   
+                        <Categories/>
                     </ul>
                     </li>
                    
