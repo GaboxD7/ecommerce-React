@@ -58,6 +58,7 @@ export default function Cart() {
                    <div className="menu-stock ">
                       <button type="button" className="btn" onClick={emptyCart}>Vaciar carrito</button>
                       <button type="button" className="btn"> <Link to={'/'} >Seguir comprando</Link></button>
+                      <button type="button" className="btn"> <Link to={'/checkout'} >Finalizar Compra</Link></button>
                    </div>
                 </div>
               </section>

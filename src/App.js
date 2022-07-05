@@ -14,6 +14,7 @@ import	{
 import Navbar from './Components/Navbar.jsx';
 import Cart from './Components/Cart';
 import MyProvider from './Components/context/CartContext';
+import CheckOut from './Components/CheckOut';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="category/:id" element={<ItemListContainer />} ></Route>
           <Route path="item/:id" element={<ItemDetailContainer />} ></Route>
           <Route path= "cart/" element={<Cart />}> </Route>
+          <Route path= "checkout/" element={<CheckOut />}> </Route>
         </Routes>
         </MyProvider>
       </BrowserRouter>
