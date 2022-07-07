@@ -15,6 +15,7 @@ import Navbar from './Components/Navbar.jsx';
 import Cart from './Components/Cart';
 import MyProvider from './Components/context/CartContext';
 import CheckOut from './Components/CheckOut';
+import Hero from './Components/Hero';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <header className="App-header">
         <Navbar />
         </header>
+        <Hero />
         <Routes>
           <Route path="/" element={<ItemListContainer />} ></Route>
           <Route path="category/:id" element={<ItemListContainer />} ></Route>

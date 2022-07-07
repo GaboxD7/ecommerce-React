@@ -46,7 +46,12 @@ const ItemDetailContainer = () => {
 
 return  (
           <>
-            {loanding &&  <h3 className='text-center d-flex justify-content-center align-items-center vh-100'>CARGANDO...</h3> }
+            {loanding &&  <div className='text-center d-flex justify-content-center align-items-center vh-100'>
+            <div className="loading">
+              <div className="d1"></div>
+              <div className="d2"></div>
+            </div>
+            </div> }
            { item && <ItemDetaill item={item}/>}
           </>
 )
