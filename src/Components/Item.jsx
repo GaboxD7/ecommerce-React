@@ -13,7 +13,7 @@ const Item = ({bike}) => {
     <div className='col-10 col-sm-6 col-md-4 col-lg-3'>
       <div className="cardd">
       <p className='p-categoria text-center'>CATEGORIA: {category}</p>
-      <Link to={`/item/${id}`}> <img src={image} alt="Avatar"  /></Link>
+      <Link to={`/item/${id}`}> <img className='imagen-item' src={image} alt="Avatar"  /></Link>
        
           <div className="container-contenido">
             {/* <h6><b>{name}</b></h6> */}

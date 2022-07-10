@@ -10,8 +10,7 @@ import { collection, getDocs, getFirestore, query, where } from 'firebase/firest
 const ItemListContainer = () => {
     const [loanding, setLoading] = useState(true);
     const [error, setError] = useState(false);
-  
-    const [resultado, setResultado] = useState();
+
     const [bikes, setBikes] = useState([])
     const {id} = useParams();
 
@@ -49,37 +48,8 @@ const ItemListContainer = () => {
 
 
 
-
-
-
-    // setTimeout(() => {
-      
-      
-    // fetch('../../productos.json')
-    
-    // .then(res => res.json())
-    // .then(data => setBikes(data.productos))
-    // .catch(error => console.error('Error', error))
-    
-    //  }, 200);
-
-
-
-
  
   }, [id])
-
-  // useEffect(() => {
-  //   !id ? setResultado(bikes) : setResultado(bikes.filter((bike) => bike.category  === id))
-
-  // // if(id) {
-  // //   let filtrados = 
-  // //   setResultado(filtrados)
-  // // }
-     
-
-  // },[id, bikes])
-
 
 
 

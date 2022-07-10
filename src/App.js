@@ -16,6 +16,7 @@ import Cart from './Components/Cart';
 import MyProvider from './Components/context/CartContext';
 import CheckOut from './Components/CheckOut';
 import Hero from './Components/Hero';
+import { Medio } from './Components/Medio';
 
 
 function App() {
@@ -29,9 +30,11 @@ function App() {
         <header className="App-header">
         <Navbar />
         </header>
-        <Hero />
+{/*        
+        <Medio /> */}
         <Routes>
-          <Route path="/" element={<ItemListContainer />} ></Route>
+          <Route path="/" element={ <> <Hero />  <Medio /> </>  } ></Route>
+          <Route path='/productos' element = {<ItemListContainer /> }></Route>
           <Route path="category/:id" element={<ItemListContainer />} ></Route>
           <Route path="item/:id" element={<ItemDetailContainer />} ></Route>
           <Route path= "cart/" element={<Cart />}> </Route>
