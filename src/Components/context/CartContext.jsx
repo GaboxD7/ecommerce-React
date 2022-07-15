@@ -8,8 +8,20 @@ const {Provider} = CartContext;
 
  const MyProvider = ({children}) => {
 
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cartLocal")) || [])
+    // const getLocal = () => {
+    //     let getCart = JSON.parse(localStorage.getItem("cart") || [])
+    //     // setCart(getCart)
+    //     console.log(getCart)
+    // }
 
+    // getLocal()
+    console.log(cart)
+    const addLocalStorage = () => {
+
+        localStorage.setItem("cartLocal", JSON.stringify(cart))
+    }
+    addLocalStorage()
     // ItemDetail - Si el producto a dd, esta en el carrito o no, Retorna boolean
     const isInCart = (id) => {
         return cart.some(x => x.id === id)
@@ -34,6 +46,7 @@ const {Provider} = CartContext;
     } else {
         setCart([...cart, newItem])
     }
+ 
     }
 
     // Vaciar el Carrito - Cart - Boton

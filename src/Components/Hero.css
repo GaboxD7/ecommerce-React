@@ -1,8 +1,8 @@
 .hero {
 
-    height: 100vh;
+    height:  80vh;
     width: 100%;
-    background-color: rebeccapurple;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,25 +11,26 @@
 }
 .hero .texture {
     width: 100%;
-    height: 100%;
+    height:  80%;
     position: absolute;
     z-index: 15;
     background:url('../../public/imagenes/texture-3.png');
 }
 .hero::after {
     width: 100%;
-    height: 100%;
+    height: 80%;
     content: '';
     position:absolute;
     z-index:10 ;
     /* top: 0;
     left: 0; */
     background: rgba(0,0,0,0.1);
+    /* box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 0px 0px 50px 15px #000000; */
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 0px 0px 50px 15px #000000;
 }
 .hero video {
     width: 100%;
-    height: 100%;
+    height:  80%;
     position: absolute;
     /* top: 0;
     left: 0; */

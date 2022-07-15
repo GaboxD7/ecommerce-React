@@ -5,7 +5,7 @@ import Banner from './Banner';
 
 export const Medio = () => {
   return (<>
-<Banner title={"Elige"} />
+<Banner title={"EL MUNDO ES MEJOR EN 2 RUEDAS"} />
     <section className='container-medio'>
      
        
@@ -37,7 +37,7 @@ export const Medio = () => {
         </div>
       </div>
     </section>
-    <Banner title={"hola "} />
+    {/* <Banner title={"hola "} /> */}
     </>
   )
 }

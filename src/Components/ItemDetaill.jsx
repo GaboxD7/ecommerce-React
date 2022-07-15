@@ -29,19 +29,28 @@ const {price, color, brand, model, category, weight, image, cantidad} = item
 
   return (
 
-      <section className='container'>
-        <div className='row container-detail'>
+      <section className='container '>
+
+
+       
+        <div className='row '>
+          <div className='detail-height'>
+
+        
+       <div className='container-detail'>
+
+      
           <div className='col-5 img-detalle'>
           <Zoom
               img={image}
-              zoomScale={4}
+              zoomScale={3}
               width={600}
-              height={500}
+              height={600}
               transitionTime={0}
               />
         
           </div>
-          <div className='col-6'>
+          <div className='col-7'>
             <div className='container-card-detail'>
                             <div>
                <div><h1>{brand} {model}</h1></div>
@@ -65,9 +74,11 @@ const {price, color, brand, model, category, weight, image, cantidad} = item
             </div>
 
 
-          
+            </div>
+            </div>
           </div>
         {/* </div> */}
+
       </section>
 
    

@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-drk">
             <div className="container-fluid">
-            <Link to={'/'} className="navbar-brand">Bike</Link>
+            <Link to={'/'} className="navbar-brand"><img src="../../imagenes/logo-bike.png" height="80px" width="140px" alt="" /></Link>
                 {/* <a className= href="#!"></a> */}
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -27,17 +27,17 @@ const Navbar = () => {
                         <Categories/>
                     </ul>
                     </li>
-                   
+{/*                    
                     <li className="nav-item">
                     <a className="nav-link disabled" href="#!" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
+                    </li> */}
                
                 </ul>
                 <li> <Link to={'/cart'} ><CartWidget  /></Link></li>
-                <form className="d-flex">
+                {/* <form className="d-flex">
                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                     <button className="btn btn-outline-success bg-dark" type="submit">Search</button>
-                </form>
+                </form> */}
                 </div>
             </div>
             </nav>

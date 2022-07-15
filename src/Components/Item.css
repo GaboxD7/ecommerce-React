@@ -6,10 +6,10 @@
     transition: 0.3s;
     position: relative;
     margin: 3rem 1rem;
-    border-radius: 20px  20px 0 0 ;
+    border-radius: 3px  3px 1rem 1rem;
     box-shadow: 0 1px 6px 0 rgba(0,0,0,0.9);
-    z-index: 30;
- 
+
+    background-color: #fff;
 }
 
   
@@ -23,18 +23,26 @@
 
     padding: 0px 1rem;
  
-
+position: absolute;
   }
   .p-model {
+    text-decoration: none;
+
     background-color:  black;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: fit-content;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.25rem;
     color: white;
+    margin-bottom: 0rem;
+    /* position: relative; */
+/* 
+    top:0;
+    left: 0; */
+
   
   }
-  .p-categoria {
+  /* .p-categoria {
 
     font-weight: 600;
     font-size: 0.75rem;
@@ -46,49 +54,21 @@
     color: white;
     padding:  0.5rem 0;
     margin-bottom: 0rem !important;
-  }
+  } */
   .imagen-item {
       height: 100%;
       width:100%;
       padding: 0 0.5rem ;
 
   }
+  .mostar-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
   
 
-/* .contenedor-btn-count button {
-  padding: 0rem 0.5rem;
-  border: none;
-  font-size: 1rem;
-  background-color: white;
-
-  font-weight: 400;
-
-} */
-/* .contenedor-btn-count button:hover {
-  color:darkcyan;
-  font-weight: bolder;
-
-} */
-/* .contenedor-btn-count h2 {
-  height:fit-content;
-  width: fit-content;
-  font-size: 1.25rem;
-
-} */
-/* 
-.btn-agregar {
-  border: solid gray 1px;
-  background-color:white;
-  width: 100%;
- color: black;
- font-size: 600;
-
- padding: 0.25rem;
-} */
-/* .btn-agregar:hover {
-background-color: black;
-color: white;
-} */
 .btn-ver {
   display: flex;
   justify-content: center;
@@ -97,17 +77,30 @@ color: white;
   text-decoration: none;
   /* border-radius: 0.25rem; */
   padding: 0.5rem;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
+  border: 3px solid #000;
+  width: 100%;
+  /* background-color: gray; */
+  font-weight: 600;
+  background-color: gray;
+  color: #000;
+border-radius: 1rem  1rem  ;
   
 }
 .btn-ver:hover {
-  color: white;
+  color: #000;
+
   background-color: gray;
 }
 .precio-model {
 /* border: 1px black solid; */
 width: fit-content;
-padding: 0.5rem;
-box-shadow: 0 1px 5px 0 rgba(52, 120, 171, 0.9);
+padding-left: 0rem;
+margin-bottom: 0.25rem;
+font-size: 0.9rem;
+margin: 0.5rem;
+
+/* padding: 0.5rem; */
+/* box-shadow: 0 1px 5px 0 rgba(52, 120, 171, 0.9); */
 }

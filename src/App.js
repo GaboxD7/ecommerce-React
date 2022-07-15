@@ -17,6 +17,7 @@ import MyProvider from './Components/context/CartContext';
 import CheckOut from './Components/CheckOut';
 import Hero from './Components/Hero';
 import { Medio } from './Components/Medio';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -41,7 +42,9 @@ function App() {
           <Route path= "checkout/" element={<CheckOut />}> </Route>
         </Routes>
         </MyProvider>
+        <Footer />
       </BrowserRouter>
+  
       
     </div>
   );
