@@ -23,21 +23,6 @@ const ItemDetailContainer = () => {
         setLoading(false)
       })
 
-
-
-
-
-    // setTimeout(() => {
-
-    // fetch('../../productos.json')
-    //   .then((res) => res.json())
- 
-    //   .then((data) => setItem(data.productos.find(prod => prod.id === parseInt(id))))
-
-
-    //   .catch((error) => console.error("Error", error));
-
-    //  }, 1000);
   }, [id]);
 
 
@@ -46,11 +31,13 @@ const ItemDetailContainer = () => {
 
 return  (
           <>
-            {loanding &&  <div className='text-center d-flex justify-content-center align-items-center vh-100'>
+            {loanding &&  <div className='text-center d-flex flex-column justify-content-center align-items-center vh-100'>
             <div className="loading">
               <div className="d1"></div>
               <div className="d2"></div>
+              
             </div>
+            <p className="color-p">Loading...</p>
             </div> }
            { item && <ItemDetaill item={item}/>}
           </>

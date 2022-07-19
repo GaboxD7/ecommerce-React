@@ -1,6 +1,18 @@
 .navbar {
-    z-index: 30;
+    z-index: 40;
     height: 6rem;
-    background-color: black;
-
+    
+    background: linear-gradient(to right, #161515, #000);
 }
+/*
+.navbar-nav .nav-link, .cart {
+    color: #fff !important;
+    background: linear-gradient(to right, #161515, #000) !important;
+} */
+/* .dropdown-menu {
+    color: #fff !important;
+} */
+/* .text-list {
+    text-decoration: none;
+    list-style: none;
+} */

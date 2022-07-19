@@ -1,6 +1,6 @@
 .hero {
 
-    height:  80vh;
+    height:  100vh;
     width: 100%;
 
     display: flex;
@@ -11,14 +11,14 @@
 }
 .hero .texture {
     width: 100%;
-    height:  80%;
+    height:  100%;
     position: absolute;
     z-index: 15;
     background:url('../../public/imagenes/texture-3.png');
 }
 .hero::after {
     width: 100%;
-    height: 80%;
+    height: 100%;
     content: '';
     position:absolute;
     z-index:10 ;
@@ -30,7 +30,7 @@
 }
 .hero video {
     width: 100%;
-    height:  80%;
+    height:  100%;
     position: absolute;
     /* top: 0;
     left: 0; */

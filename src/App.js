@@ -18,6 +18,9 @@ import CheckOut from './Components/CheckOut';
 import Hero from './Components/Hero';
 import { Medio } from './Components/Medio';
 import Footer from './Components/Footer';
+import CollapsibleExample from './Components/CollapsibleExample.jsx'
+
+// import NavbarPlus from './Components/NavbarPlus';
 
 
 function App() {
@@ -29,7 +32,9 @@ function App() {
       <BrowserRouter>
       <MyProvider>
         <header className="App-header">
-        <Navbar />
+        {/* <Navbar /> */}
+        <CollapsibleExample />
+        {/* <NavbarPlus /> */}
         </header>
 {/*        
         <Medio /> */}

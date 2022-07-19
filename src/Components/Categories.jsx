@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import { Link } from "react-router-dom";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export default function Categories () {
@@ -22,11 +23,12 @@ export default function Categories () {
     return   <>
                     
                 {caregory.map((el) => ( 
-                    <li key={el}>
-                        <Link to={`/category/${el}`} className="dropdown-item">
+                <NavDropdown.Item>
+                        <Link key={el} className="barra-link-off2" to={`/category/${el}`} >
                             {`${el}`}
                         </Link>
-                    </li>
+                </NavDropdown.Item>
+       
                  ))}
              </>
 }

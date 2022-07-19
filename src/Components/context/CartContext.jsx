@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect} from "react";
 
 
 export const CartContext = createContext()
@@ -9,19 +9,10 @@ const {Provider} = CartContext;
  const MyProvider = ({children}) => {
 
     const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cartLocal")) || [])
-    // const getLocal = () => {
-    //     let getCart = JSON.parse(localStorage.getItem("cart") || [])
-    //     // setCart(getCart)
-    //     console.log(getCart)
-    // }
-
-    // getLocal()
-    console.log(cart)
-    const addLocalStorage = () => {
-
+    useEffect(() => {
         localStorage.setItem("cartLocal", JSON.stringify(cart))
-    }
-    addLocalStorage()
+    }, [cart]);
+
     // ItemDetail - Si el producto a dd, esta en el carrito o no, Retorna boolean
     const isInCart = (id) => {
         return cart.some(x => x.id === id)
@@ -66,8 +57,8 @@ const {Provider} = CartContext;
     // Metodo Reduce  CartWidget. Retornara la cantidad total de unidades que tiene nuestro state  cart 
 
     const getItemQty = () => {
-        // return cart.length
-        return  cart.reduce((acc, x) => acc += x.quantities, 0)
+        return cart.length
+        // return  cart.reduce((acc, x) => acc += x.quantities, 0)
     }
 
     // Cart - Retorna e precio total de carrito

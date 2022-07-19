@@ -28,60 +28,70 @@ const ItemDetaill = ({item}) => {
 const {price, color, brand, model, category, weight, image, cantidad} = item
 
   return (
-
+    window.screen.width > 992 ?
       <section className='container '>
-
-
-       
-        <div className='row '>
-          <div className='detail-height'>
+        <section className=''>
 
         
-       <div className='container-detail'>
-
-      
-          <div className='col-5 img-detalle'>
-          <Zoom
-              img={image}
-              zoomScale={3}
-              width={600}
-              height={600}
-              transitionTime={0}
-              />
-        
-          </div>
-          <div className='col-7'>
-            <div className='container-card-detail'>
-                            <div>
-               <div><h1>{brand} {model}</h1></div>
-               <div><p>Categoria: {category}</p></div>
-            </div>
-          
-            <h2>$ {price}</h2>
-            <h6>Color: {color}</h6>
-            <h6>Peso: {weight} Kg</h6>
-            {/* <div className='container-add-carro'>
-                <div className='container-boton'>
-                  <button>-</button>
-                  <h2>1</h2>
-                  <button>+</button>
-                </div> */}
-                {quantities > 0 ?  <div className='container-terminar'><Link to={'/cart'} className="terminar-compra">Terminar mi compra</Link></div>  : <ItemCount cantidad={cantidad} inicial={1} onAdd={onAdd} />}
-                {/* <div className='agregar'>
-                  <button>AGREGAR AL CARRITO</button>
-                </div> */}
-            </div>
-            </div>
-
-
-            </div>
+        <div className='row g-0 m-lg-5 p-5 m-md-2' >
+          <div className='col-lg-6 col-md-12 col-sm-12 img-detalle'>
+            <div>
+              <Zoom
+                img={image}
+                zoomScale={3}
+                width={850}
+                height={500}
+                transitionTime={0}
+                />
             </div>
           </div>
-        {/* </div> */}
-
+          <div className='col-lg-6 col-md-12 col-sm-12'>
+              {/* <div className='container-col-detail'> */}
+                 <div className='container-card-detail'>
+                       <div>
+                          <div><h1>{brand} {model}</h1></div>
+                          <div><p>Categoria: {category}</p></div>
+                       </div>
+                      <h2>$ {price}</h2>
+                      <h6>Color: {color}</h6>
+                      <h6>Peso: {weight} Kg</h6>
+                        {quantities > 0 ?  <div className='container-terminar'><Link to={'/cart'} className="terminar-compra">Terminar mi compra</Link></div>  : <ItemCount cantidad={cantidad} inicial={1} onAdd={onAdd} />}
+                  </div>
+              {/* </div> */}
+             </div>
+            </div>
+            </section>
       </section>
 
+   : 
+
+   <section className='container '>
+   <section className=''>
+
    
+   <div className='row g-0 m-lg-5 m-sm-5 p-5 m-md-2' >
+     <div className='col-lg-6 col-md-12 col-sm-12 img-detalle'>
+       <div>
+          <img src={image} height={300} alt="" />
+       </div>
+     </div>
+     <div className='col-lg-6 col-md-12 col-sm-12'>
+         {/* <div className='container-col-detail'> */}
+            <div className='container-card-detail'>
+                  <div>
+                     <div><h1>{brand} {model}</h1></div>
+                     <div><p>Categoria: {category}</p></div>
+                  </div>
+                 <h2>$ {price}</h2>
+                 <h6>Color: {color}</h6>
+                 <h6>Peso: {weight} Kg</h6>
+                   {quantities > 0 ?  <div className='container-terminar'><Link to={'/cart'} className="terminar-compra">Terminar mi compra</Link></div>  : <ItemCount cantidad={cantidad} inicial={1} onAdd={onAdd} />}
+             </div>
+         {/* </div> */}
+        </div>
+       </div>
+       </section>
+ </section>
   )
 }
 

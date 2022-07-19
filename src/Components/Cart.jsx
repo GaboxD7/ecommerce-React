@@ -10,12 +10,6 @@ import {RiDeleteBinLine} from 'react-icons/ri'
 export default function Cart() {
 
   const { cart, getItemPrice, deleteItem, emptyCart  } = useContext(CartContext)
-  // return (
-  //   <div> 
-  //     {
-  //     JSON.stringify(cart.length)}
-  //   </div>
-  // )
 
   return (
    <>
@@ -29,7 +23,6 @@ export default function Cart() {
                         <th scope="col"  className="text-center p-3 color-space" >IMAGEN</th>
                         <th scope="col" className="text-center p-3" >CANTIDAD</th>
                         <th scope="col" className="text-center p-3" >PRODUCTOS</th>
-                      
                         <th scope="col"className="text-center p-3" >SUB-TOTAL</th>
                         <th scope="col" className="text-center p-3 color-space" >Eliminar</th>
                   </thead>
@@ -47,7 +40,6 @@ export default function Cart() {
                               <td className="padre-img"><div className="hijo-img">$ { item.price * item.quantities}</div></td>
                               <td className="padre-img"><div  className="borrar-producto hijo-img " onClick={() => deleteItem(item.id)}> <RiDeleteBinLine/></div></td>      
                           </tr>
-                       
                       ))}
                     </tbody>
                   </table>
@@ -56,9 +48,9 @@ export default function Cart() {
                      <h2> $ {getItemPrice()}</h2>
                    </section>
                    <div className="menu-stock ">
-                      <button type="button" className="btn" onClick={emptyCart}>Vaciar carrito</button>
-                      <button type="button" className="btn"> <Link to={'/'} >Seguir comprando</Link></button>
-                      <button type="button" className="btn"> <Link to={'/checkout'} >Finalizar Compra</Link></button>
+                      <button type="button" className="btn barra-link-off2" onClick={emptyCart}>Vaciar carrito</button>
+                      <button type="button" className="btn"> <Link className='barra-link-off2' to={'/'} >Seguir comprando</Link></button>
+                      <button type="button" className="btn"> <Link className='barra-link-off2' to={'/checkout'} >Finalizar Compra</Link></button>
                    </div>
                 </div>
               </section>
@@ -68,10 +60,13 @@ export default function Cart() {
     
         :
       <section className="row">
-        <div className="col-12 carrito-vacio bg-light">  
-          <h2>SU CARRITO ESTÁ VACIO</h2>
-          <p>Para seguir comprando, navegar por las categorías en el sitio, o busque su producto.</p>
-          <button type="button" className="btn"> <Link to={'/'} >Seguir comprando</Link></button>
+        <div className="col-12 carrito-vacio"> 
+                      <div>
+                          <h2>SU CARRITO ESTÁ VACIO</h2>
+                          <p>Para seguir comprando, navegar por las categorías en el sitio, o busque su producto.</p>
+                          <button type="button" className='boton-submit'> <Link to={'/'} className='enlace-none' >Seguir comprando</Link></button>
+                      </div>
+
         </div>
       </section>
       }

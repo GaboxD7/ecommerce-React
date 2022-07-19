@@ -9,15 +9,15 @@ import './Item.css'
 const Item = ({bike}) => {
 
 
-  const {name, image, brand, model, price, id, category } = bike
+  const {image, brand, model, price, id } = bike
 
   return (
     <>
   
-    <div className='col-10 col-sm-6 col-md-4 col-lg-3'>
+    <div className='col-6 col-sm-6 col-md-4 col-lg-3'>
       <div className="cardd">
         <div >
-        <Link to={`/item/${id}`} className='mostrar-img'> <img className='imagen-item' src={image} alt="Avatar"  /> <p className='p-model'>{brand} {model}</p></Link>
+        <Link to={`/item/${id}`} className='mostrar-img barra-link-off'> <p className='p-model'>{brand} {model}</p> <img className='imagen-item' src={image} alt="Avatar"  /></Link>
         </div>
       {/* <p className='p-categoria text-center'>CATEGORIA: {category}</p> */}
 

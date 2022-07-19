@@ -61,15 +61,18 @@ const ItemListContainer = () => {
   return (
 
     <>
-    {loanding &&  <div className='text-center d-flex justify-content-center align-items-center vh-100'>
-    <div className="loading">
-    <div className="d1"></div>
-    <div className="d2"></div>
-</div></div> }
+    {loanding && 
+     <div className='text-center d-flex flex-column justify-content-center align-items-center vh-100'>
+          <div className="loading">
+              <div className="d1"></div>
+              <div className="d2"></div>
+          </div>
+          <p className='color-p'>Loading...</p>
+    </div> }
       <div className='container'>
-       <div className='row justify-content-center flex-wrap' >
-       <ItemList bikes={bikes}  /> 
-       </div>       
+          <div className='row justify-content-center flex-wrap' >
+               <ItemList bikes={bikes}  /> 
+          </div>       
       </div>
      
     </>

@@ -7,7 +7,7 @@
   
   .d1 ,
   .d2 {
-    border: 5px solid #02091f;
+    border: 5px solid #fff;
     border-radius: 50px;
   }
   
@@ -28,7 +28,9 @@
     margin: 7.5px;
     animation: load2812 2s linear infinite;
   }
-  
+  .color-p {
+    color: #fff;
+  }
   @keyframes load161 {
     0% {
       transform: rotate(0);

@@ -45,8 +45,8 @@
   }
 
   .menu-stock button:hover {
-    background-color: #111;
-    color: white;
+    /* background-color: #111;
+    color: white; */
   }
   .color-space {
     color:  #fafafa;
@@ -64,21 +64,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30rem;
+    height: 100vh;
+  
+   
 
   }
+  .carrito-vacio div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    background: linear-gradient(to right, #161515, #000);
+    box-shadow: -5px 0px 13px -7px #fff, 5px 0px 13px -7px #fff, 49px -37px 15px -30px rgba(255,255,255,0);
+      color: white;
+      flex-basis: 55%;
+      max-width: 45rem;
+      min-width: 18rem;
+      padding: 1rem;
+  }
   .carrito-vacio button {
-    margin-top: 4rem;
-    padding: 1rem 4rem;
-    border-radius: 2rem;
+    /* margin-top: 8rem; */
+    /* padding: 1rem ;
+
     background-color: #111;
     color: white;
-    border: solid 0.15rem;
+    border: solid 0.15rem; */
+    text-decoration-line: none;
+    text-decoration: none;
+
+
   }
-  .carrito-vacio button:hover {
-    background-color: white;
-    color: #111;
-  }
+                         
+.enlace-none {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.enlace-none:hover {
+  color: #000;
+}
+
   .container-price {
 background-color: aqua !important;
 /* display: flex; */
