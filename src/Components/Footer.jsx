@@ -15,7 +15,7 @@ const Footer = props => {
       
         <div className='columna-footer'>
             <img src="../../imagenes/logo-bike.png" className='logo' height="70px" width="120px" alt="" />
-            <p>Lorem ipsum dolor sit amet consecteturlpa, sequi qui doloremque veniam ab recusandae aliquid atque</p>
+            <p>Aqui encontraras un espacio para obtener las mejores marcas de bicicletas.</p>
         </div>
         <div className='columna-footer'>
           <h4>Tienda <div className='underline'><span></span></div></h4>
@@ -53,7 +53,7 @@ const Footer = props => {
 
         </div>
         <hr className='line' />
-        <p className='copy-right'>Lorem ipsum, doipisicing elit. Suscipit repellat nostrum quibusdam maxime quod quisquam vitae magni maiores! Saepe ex cons</p>
+        <p className='copy-right'>Developed by Gabriel Rios 2022 ©. All rights reserved.</p>
     </footer>
   )
 }

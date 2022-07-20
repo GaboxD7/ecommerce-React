@@ -1,6 +1,3 @@
-
-import './App.css';
-
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import ItemListContainer from './Components/ItemListContainer';
 
@@ -9,8 +6,6 @@ import	{
   Route,
   Routes}
   from "react-router-dom"
-
-
 import Navbar from './Components/Navbar.jsx';
 import Cart from './Components/Cart';
 import MyProvider from './Components/context/CartContext';
@@ -19,7 +14,7 @@ import Hero from './Components/Hero';
 import { Medio } from './Components/Medio';
 import Footer from './Components/Footer';
 import CollapsibleExample from './Components/CollapsibleExample.jsx'
-
+import './App.css';
 // import NavbarPlus from './Components/NavbarPlus';
 
 

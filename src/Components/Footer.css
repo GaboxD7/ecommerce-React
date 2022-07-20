@@ -6,9 +6,9 @@ bottom: 0;
 background: linear-gradient(to right, #161515, #000);
 color: #fff;
 /* background-color: #000; */
-padding: 100px 0 30px;
-border-top-left-radius: 125px ;
-line-height: 20px;
+padding: 100px 0 1.87rem;
+border-top-left-radius: 7.8rem ;
+line-height: 1.25rem;
 
 }
 .container-footer {
@@ -20,7 +20,7 @@ line-height: 20px;
 }
 .columna-footer {
 flex-basis: 25%;
-padding: 10px;
+padding: 0.62rem;
 }
 .columna-footer:nth-child(2), .columna-footer:nth-child(3) {
     flex-basis: 15%;
@@ -31,19 +31,19 @@ padding: 10px;
 }
 .columna-footer h4 {
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     position: relative;
 }
 .email-id {
 
    width: fit-content; 
    border-bottom: 1px solid #ccc;
-   margin: 20px 0;
+   margin: 1.25rem 0;
 }
 
 .form-list-footer  li {
     list-style: none ;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
 }
 .form-list-footer {
@@ -56,16 +56,16 @@ color: #fff;
 
 }
 .form-footer {
-  padding-bottom: 15px;  
+  padding-bottom: 1rem;  
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ccc ;
-  margin-bottom: 50px;
+  margin-bottom: 3.12rem;
 }
 .icon-envelope {
-    font-size: 24px;
-    margin-right: 8px;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 
 }
 .form-footer input {
@@ -84,22 +84,22 @@ color: #fff;
     
 }
 .icon-social  .icons {
-width: 30px;
-height: 30px;
+width: 1.87rem;
+height: 1.87rem;
 padding: 3px;
 border-radius: 50% ;
 text-align: center;
-line-height: 40px;
+line-height: 2.5rem;
 color: #000;
 background-color: #fff;
-margin-right: 15px;
+margin-right: 1rem;
 cursor: pointer;
 }
 .line{
 width: 90%;
 border: 0;
 border-bottom: 1px solid #ccc;
-margin: 20px auto;
+margin: 1.25rem auto;
 } 
 .copy-right {
    text-align: center; 
@@ -110,24 +110,24 @@ margin: 20px auto;
     background-color:  #767676;
     border-radius: 3px;
     position: absolute;
-    top: 40px;
+    top: 2.5rem;
     left: 0;
     overflow: hidden;
 }
 .underline span {
-   width: 25px;
+   width: 1.5rem;
    height: 100%;
    background-color: #fff;
    border-radius: 3px;
    position: absolute;
    top: 0;
-   left: 10px;
+   left: 0.625rem;
    animation: moving 3s linear infinite; 
 }
 
 @keyframes  moving {
     0% {
-        left: -10px;
+        left: -0.625;
     }
     100% {
         left: 100%;

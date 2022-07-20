@@ -1,7 +1,9 @@
 .table {
-    background-color: #fafafa;
+
+    /* background-color: #fafafa; */
     /* height: 32rem; */
-    box-shadow: 14px 15px 25px -30px rgb(74 74 74);
+    /* box-shadow: 14px 15px 25px -30px rgb(74 74 74); */
+    /* background-color: aqua; */
 }
 .padre-img {
     position: relative;
@@ -20,34 +22,42 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
+
   }
-  /* .hijo-img2 {
+  .hijo-img2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
-  } */
+  }
+  .padre-img2 {
+    position: relative;
+    height: 5rem;
+    width: auto;
+  }
+
   .menu-stock {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    /* background-color: blue; */
+    padding: 1rem;
   }
   .menu-stock button {
-    margin: 0 1.25rem;
-    padding: 1rem;
+    width: fit-content;
+    /* margin: 0 1.25rem;
+    padding: 1rem; */
     border-radius: 0.25rem;
     background-color: white;
     border: solid 0.15rem;
     text-decoration: none;
-    color: black !important;
+    padding: 0.25rem;
+    text-transform: uppercase;
   }
 
-  .menu-stock button:hover {
-    /* background-color: #111;
-    color: white; */
-  }
+
   .color-space {
     color:  #fafafa;
   }
@@ -55,9 +65,92 @@
     height: 100%;
     width: auto;
   }
+  .img-carro  {
+    /* height: 5rem; */
+
+  }
   .borrar-producto {
     cursor: pointer;
     font-size: 1.75rem;
+  }
+  .th-word {
+    font-size: 1rem;
+    padding: 0 0.1rem;
+  }
+  .td-word {
+    font-size: 1rem; 
+    text-align: center;
+  }
+  .td-word2 {
+
+    font-size: 1.5rem;
+    height: 2rem;
+  }
+  @media screen and (max-width: 532px) {
+    .th-word {
+      font-size: 0.75rem;
+    }
+    .td-word {
+      font-size: 0.75rem; 
+      text-align: center;
+    }
+    .padre-img {
+      position: relative;
+      height: 4rem;
+      width: auto;
+    }
+  }
+  @media screen and (min-width: 532px) and (max-width: 768px) {
+    .padre-img {
+      position: relative;
+      height: 6rem;
+      width: auto;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 349px) {
+    .th-word {
+      font-size: 0.65rem;
+    }
+  }
+/* @media screen and (max-width: 992px) {
+.columna-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+
+}
+.columna-cart2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+}
+  
+}
+@media screen and (max-width: 571px) {
+  .columna-cart2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8rem;
+  }
+    
+} */
+
+  .tableTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fafafa;
+    /* height: 32rem; */
+    /* box-shadow: 14px 15px 25px -30px rgb(74 74 74); */
+
+    padding: 00.25rem 0rem;
+    /* margin-bottom: 3rem; */
+    /* background-color: blueviolet; */
   }
   .carrito-vacio {
     display: flex;
@@ -81,48 +174,4 @@
       max-width: 45rem;
       min-width: 18rem;
       padding: 1rem;
-  }
-  .carrito-vacio button {
-    /* margin-top: 8rem; */
-    /* padding: 1rem ;
-
-    background-color: #111;
-    color: white;
-    border: solid 0.15rem; */
-    text-decoration-line: none;
-    text-decoration: none;
-
-
-  }
-                         
-.enlace-none {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-}
-.enlace-none:hover {
-  color: #000;
-}
-
-  .container-price {
-background-color: aqua !important;
-/* display: flex; */
-flex-direction: row;
-/* justify-content: center;
-align-items: center; */
-
-
-  }
-  .tableTotal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #fafafa;
-    /* height: 32rem; */
-    box-shadow: 14px 15px 25px -30px rgb(74 74 74);
-
-    padding: 1rem 1.5rem;
-    margin-bottom: 3rem;
   }

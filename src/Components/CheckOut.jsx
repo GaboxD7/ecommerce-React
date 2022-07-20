@@ -6,12 +6,13 @@ import './CheckOut.css'
 import {BiEnvelope} from "react-icons/bi"
 import {FaPhoneSquareAlt} from "react-icons/fa"
 import {BiUserPin} from "react-icons/bi"
-import {TbSend} from "react-icons/tb"
 import {TiArrowRight} from "react-icons/ti"
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import {Link} from 'react-router-dom';
+import Swal from 'sweetalert2';
 
-const CheckOut = () => {
+  const CheckOut = () => {
+
   const [formSend, setFormSend ] = useState(false);
   const [orderCompra, setOrderCompra] = useState('')
   const {cart, getItemPrice, emptyCart } = useContext(CartContext)
@@ -65,7 +66,7 @@ const CheckOut = () => {
           }}
           onSubmit={(valores, {resetForm}) => {
             // Base de datos
-            console.log(valores)
+ 
                 const order = {
                 buyer: valores,
                 items: cart,
@@ -83,7 +84,7 @@ const CheckOut = () => {
             resetForm()
             setFormSend(true)
         
-            setTimeout(()=> setFormSend(false), 3000 )
+            setTimeout(()=> setFormSend(false), 5000 )
           }}
         >
               {({errors}) => (
@@ -111,11 +112,9 @@ const CheckOut = () => {
                             name='cel' 
                             placeholder='Escribe tu celular' 
                             className="input-check"
-             
                             />
 
-                        </div>
-                                                    
+                        </div>                             
                         <ErrorMessage name='cel' component={() => (
                               <div className='error'>{errors.cel}</div> )} />
                         <div className='form-check' >
@@ -127,7 +126,6 @@ const CheckOut = () => {
                             name='email' 
                             placeholder='Escribe tu correo' 
                             className='input-check'
-  
 
                             />
                             
@@ -140,7 +138,7 @@ const CheckOut = () => {
                   </Form>
               )}
         </Formik>
-    
+ 
       </section>
 )}
     </>

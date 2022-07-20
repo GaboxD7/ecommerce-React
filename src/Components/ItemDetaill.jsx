@@ -6,6 +6,7 @@ import ItemCount from './ItemCount'
 import './ItemDetaill.css'
 import { CartContext } from './context/CartContext';
 import { useContext } from 'react';
+import Swal from 'sweetalert2'
 
 const ItemDetaill = ({item}) => {
 
@@ -13,11 +14,22 @@ const ItemDetaill = ({item}) => {
   // Consumiendo  Provider
   const { isInCart, addItem } = useContext(CartContext)
 
+    const mostrarAlerta=() => {
+        Swal('Esta es un Alerta')
+    }
+
   const onAdd = (count) => {
   
     setQuantities(count)
-      
-      alert(`Agregaste ${count} productos `)
+    Swal.fire({
+      title: "¡Exitos!",
+      text:`Se ha agregado ${count == 1 && "a"  } ${count}  ${count > 1 ? "productos" : "producto"  }`,
+      icon:'success',
+      background:"#FAFAFA",
+      confirmButtonColor: '#413F42',
+  })
+      // alert(`Agregaste ${count} productos `)
+      mostrarAlerta()
       isInCart(item.id)
       addItem(item, count )  
 

@@ -5,6 +5,8 @@ import './Cart.css'
 import ItemCount from './ItemCount'
 import {Link} from 'react-router-dom';
 import {RiDeleteBinLine} from 'react-icons/ri'
+import {FaTruck} from 'react-icons/fa'
+
 
 
 export default function Cart() {
@@ -15,16 +17,17 @@ export default function Cart() {
    <>
       {
         cart.length  > 0 ? (
-          <section className='container'> 
-              <section className='row' >
-                <div className="col-12 p-5 mt-5 " >
-                   <table className="table p-5">
+          <section className='container bg-liht mt-3 mb-3'> 
+              <section className='row ' >
+                <div className="col-lg-8 col-md-12 col-sm-12" >
+                    <div className='columna-cart2'>
+                    <table className="table bg-light ">
                   <thead>
-                        <th scope="col"  className="text-center p-3 color-space" >IMAGEN</th>
-                        <th scope="col" className="text-center p-3" >CANTIDAD</th>
-                        <th scope="col" className="text-center p-3" >PRODUCTOS</th>
-                        <th scope="col"className="text-center p-3" >SUB-TOTAL</th>
-                        <th scope="col" className="text-center p-3 color-space" >Eliminar</th>
+                        <th scope="col"  className="text-center  th-word  color-space" >IMAGEN</th>
+                        <th scope="col" className="text-center  th-word  " >CANTIDAD</th>
+                        <th scope="col" className="text-center th-word  " >PRODUCTOS</th>
+                        <th scope="col"className="text-center  th-word " >SUB-TOTAL</th>
+                        <th scope="col" className="text-center  th-word p-3 color-space" >Eliminar</th>
                   </thead>
                   <tbody>                   
                     { cart.map((item, index) => (
@@ -35,24 +38,67 @@ export default function Cart() {
                               src={item.image} 
                               alt="product" />
                               </td>
-                              <td className="padre-img"><div className="hijo-img"> <ItemCount cantidad={item.cantidad} inicial={item.quantities} /> </div></td>
-                              <td className="padre-img"><div className="hijo-img"> {item.brand} {item.model}</div></td>
-                              <td className="padre-img"><div className="hijo-img">$ { item.price * item.quantities}</div></td>
-                              <td className="padre-img"><div  className="borrar-producto hijo-img " onClick={() => deleteItem(item.id)}> <RiDeleteBinLine/></div></td>      
+                              <td className="padre-img"><div className="hijo-img"> <p className='td-word'>{item.quantities}</p>  </div></td>
+                              <td className="padre-img"><div className="hijo-img"> <p className='td-word'>{item.brand} {item.model}</p></div></td>
+                              <td className="padre-img"><div className="hijo-img"><p className='td-word'>$  { item.price * item.quantities}</p></div></td>
+                              <td className="padre-img"><div  className="borrar-producto hijo-img " onClick={() => deleteItem(item.id)}> <p className='td-word2'><span><RiDeleteBinLine/></span></p></div></td>      
                           </tr>
                       ))}
                     </tbody>
                   </table>
-                   <section className='tableTotal'>
+                    </div>
+
+                  </div>
+                    <div className='col-lg-4 col-md-12 col-sm-12'>
+                      <div className='columna-cart'>
+                      <table className="table bg-light sticky-op ">
+                      <thead>
+                          <th scope="col" class="text-center p-3" >RESUMEN DE COMPRA</th>
+                      </thead>
+                      <tbody>
+                      <tr>
+                            <td class="padre-img2">
+                               <div className="hijo-img2 ">
+                                <FaTruck/>Calcular costos de envios
+                                <Link to={`/`}>¡Click Aqui!</Link> 
+                                </div>
+                             </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                <section className='tableTotal'>
+                                    <h4>Total:</h4>
+                                    <h4> $ {getItemPrice()}</h4>
+                              </section> 
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+
+                            <div className="menu-stock ">
+                                <button type="button" className="bn barra-link-off2" onClick={emptyCart}>Vaciar</button>
+                               
+                                <button type="button" className="btn"> <Link className='barra-link-off2' to={'/checkout'} >Comprar</Link></button>
+                             </div>                                                 
+                          </td>
+                        </tr>
+                      </tbody>
+                      </table>
+                      </div>
+
+                    </div>
+
+
+                   {/* <section className='tableTotal'>
                      <h2>Total:</h2>
                      <h2> $ {getItemPrice()}</h2>
-                   </section>
-                   <div className="menu-stock ">
-                      <button type="button" className="btn barra-link-off2" onClick={emptyCart}>Vaciar carrito</button>
-                      <button type="button" className="btn"> <Link className='barra-link-off2' to={'/'} >Seguir comprando</Link></button>
-                      <button type="button" className="btn"> <Link className='barra-link-off2' to={'/checkout'} >Finalizar Compra</Link></button>
-                   </div>
-                </div>
+                   </section> */}
+                   {/* <div className="menu-stock ">
+                      <button type="button" className="btn barra-link-off2" onClick={emptyCart}>Vaciar</button>
+                      <button type="button" className="btn"> <Link className='barra-link-off2' to={'/'} >Ir a tienda</Link></button>
+                      <button type="button" className="btn"> <Link className='barra-link-off2' to={'/checkout'} >Comprar</Link></button>
+                   </div> */}
+             
               </section>
           </section>
   

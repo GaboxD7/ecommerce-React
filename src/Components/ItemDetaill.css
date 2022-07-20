@@ -51,6 +51,7 @@
     width: 100%;
     margin: 0;
     background-color: #fafafa;
+     box-shadow: -5px 10px 13px -7px #fff, 10px 0px 13px -7px #fff, 49px -37px 15px -30px rgba(255,255,255,0);
 }
 .container-card-detail h1 {
     border-bottom: 0.1rem solid black;
