@@ -2,7 +2,7 @@
 import  React, { useContext } from 'react'
 import { CartContext } from './context/CartContext'
 import './Cart.css'
-import ItemCount from './ItemCount'
+
 import {Link} from 'react-router-dom';
 import {RiDeleteBinLine} from 'react-icons/ri'
 import {FaTruck} from 'react-icons/fa'

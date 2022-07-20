@@ -1,5 +1,5 @@
 # **E-Commerce React.js**
-*Este proyecto fue desarrolado en el curso de React js en la Academia educativa CoderHouse.*
+*Este proyecto fue desarrolado durante el curso de React js en la Academia educativa CoderHouse.*
 
 ## **Cómo correr este proyecto:**
 Para correrlo de manera local debes seguir los siguientes puntos:

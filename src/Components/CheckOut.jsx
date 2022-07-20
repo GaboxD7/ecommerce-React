@@ -2,14 +2,13 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import { useContext } from 'react';
 import { useState } from 'react'
 import { CartContext } from './context/CartContext';
-import './CheckOut.css' 
+import './CheckOut.css';
 import {BiEnvelope} from "react-icons/bi"
 import {FaPhoneSquareAlt} from "react-icons/fa"
 import {BiUserPin} from "react-icons/bi"
 import {TiArrowRight} from "react-icons/ti"
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import {Link} from 'react-router-dom';
-import Swal from 'sweetalert2';
 
   const CheckOut = () => {
 

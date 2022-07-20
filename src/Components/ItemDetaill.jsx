@@ -14,22 +14,18 @@ const ItemDetaill = ({item}) => {
   // Consumiendo  Provider
   const { isInCart, addItem } = useContext(CartContext)
 
-    const mostrarAlerta=() => {
-        Swal('Esta es un Alerta')
-    }
-
+  
   const onAdd = (count) => {
   
     setQuantities(count)
     Swal.fire({
       title: "¡Exitos!",
-      text:`Se ha agregado ${count == 1 && "a"  } ${count}  ${count > 1 ? "productos" : "producto"  }`,
+      text:`Se ha agregado  ${count}  ${count > 1 ? "productos" : "producto"  }`,
       icon:'success',
       background:"#FAFAFA",
       confirmButtonColor: '#413F42',
   })
-      // alert(`Agregaste ${count} productos `)
-      mostrarAlerta()
+
       isInCart(item.id)
       addItem(item, count )  
 

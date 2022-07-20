@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import './ItemCount.css'
-const Swal = require('sweetalert2')
+
 const ItemCount =  ({cantidad, inicial, onAdd}) => {
 
     const [count, setCount] = useState(inicial);
@@ -9,7 +9,7 @@ const ItemCount =  ({cantidad, inicial, onAdd}) => {
  
     const restar = () => { 
     
-    count > inicial ?  setCount(count - 1) : alert('No puedes quitar mas productos');
+    count > inicial &&  setCount(count - 1) ;
   
     }
   
@@ -18,7 +18,7 @@ const ItemCount =  ({cantidad, inicial, onAdd}) => {
         if (count < stock) {
             setCount(count + 1);
         } else {
-            alert('No puedes add mas producto');
+          
         }
      
     }
