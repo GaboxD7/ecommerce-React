@@ -1,6 +1,9 @@
 # **E-Commerce React.js**
 *Este proyecto fue desarrolado durante el curso de React js en la Academia educativa CoderHouse.*
 
+En este link se adjunta video:
+https://www.loom.com/share/097abb74542148e08e804f5bf8a17c06
+
 ## **Cómo correr este proyecto:**
 Para correrlo de manera local debes seguir los siguientes puntos:
 
@@ -9,6 +12,9 @@ Descargá el proyecto de este repositorio.
 2. Corré el comando npm start.
 3. Abrí http://localhost:3000 para visualizarlo en tu navegador.
 4. Hice un e-commerce como proyecto utilizando react.
+
+*De igual manera este proyecto esta deployeado en Vercel y puedes visualizarlo en el siguiete link:*
+https://ecommerce-react-inky.vercel.app/
 
 ## **Librerías utilizadas**
 - ***Bootstrap :*** Librería multiplataforma de código abierto para darle diseño a todo el proyecto.

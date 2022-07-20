@@ -8,7 +8,7 @@ const {Provider} = CartContext;
 
  const MyProvider = ({children}) => {
 
-    const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cartLocal")) || [])
+    const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cartLocal")) ?? [])
     useEffect(() => {
         localStorage.setItem("cartLocal", JSON.stringify(cart))
     }, [cart]);

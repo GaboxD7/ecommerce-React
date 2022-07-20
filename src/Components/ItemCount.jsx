@@ -22,9 +22,7 @@ const ItemCount =  ({cantidad, inicial, onAdd}) => {
         }
      
     }
-    const reset = () => {
-        setCount(inicial);
-    }
+
 
   return (
     onAdd !== undefined ?

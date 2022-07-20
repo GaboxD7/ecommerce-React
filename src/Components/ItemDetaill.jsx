@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useState } from 'react'
-import Zoom  from 'react-img-zoom'
-import ItemCount from './ItemCount'
+import { useState } from 'react';
+import Zoom  from 'react-img-zoom';
+import ItemCount from './ItemCount';
 import './ItemDetaill.css'
 import { CartContext } from './context/CartContext';
 import { useContext } from 'react';
@@ -19,6 +19,7 @@ const ItemDetaill = ({item}) => {
     isInCart(item.id)
     addItem(item, count )  
     setQuantities(count)
+
     Swal.fire({
       title: "¡Exitos!",
       text:`Se ha agregado  ${count}  ${count > 1 ? "productos" : "producto"  }`,
@@ -27,9 +28,8 @@ const ItemDetaill = ({item}) => {
       confirmButtonColor: '#413F42',
   })
 
-    
-
-    }
+  
+    };
   
 
 
@@ -74,9 +74,7 @@ const {price, color, brand, model, category, weight, image, cantidad} = item
    : 
 
    <section className='container '>
-   <section className=''>
-
-   
+   <section className=''> 
    <div className='row g-0 m-lg-5 m-sm-5 p-5 m-md-2' >
      <div className='col-lg-6 col-md-12 col-sm-12 img-detalle'>
        <div>
