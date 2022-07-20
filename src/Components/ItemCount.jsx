@@ -39,7 +39,7 @@ const ItemCount =  ({cantidad, inicial, onAdd}) => {
                 <div className='agregar'>
                     <button 
                       //  disabled={validarAgregar()}
-                       onClick={() => {onAdd(count);  reset() }  }
+                       onClick={() => {onAdd(count)}  }
       
                        >AGREGAR AL CARRITO
                   </button>

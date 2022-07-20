@@ -16,7 +16,8 @@ const ItemDetaill = ({item}) => {
 
   
   const onAdd = (count) => {
-  
+    isInCart(item.id)
+    addItem(item, count )  
     setQuantities(count)
     Swal.fire({
       title: "¡Exitos!",
@@ -26,8 +27,7 @@ const ItemDetaill = ({item}) => {
       confirmButtonColor: '#413F42',
   })
 
-      isInCart(item.id)
-      addItem(item, count )  
+    
 
     }
   
