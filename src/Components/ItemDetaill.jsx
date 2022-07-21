@@ -73,9 +73,9 @@ const {price, color, brand, model, category, weight, image, cantidad} = item
 
    : 
 
-   <section className='container '>
-   <section className=''> 
-   <div className='row g-0 m-lg-5 m-sm-5 p-5 m-md-2' >
+   <section className='container-fluid '>
+   {/* <section className='container-fluid'>  */}
+   <div className='row g-0 m-lg-5 m-sm-5 p-sm-0 p-md-3 p-lg-5 m-md-2' >
      <div className='col-lg-6 col-md-12 col-sm-12 img-detalle'>
        <div>
           <img src={image} height={300} alt="" />
@@ -96,7 +96,7 @@ const {price, color, brand, model, category, weight, image, cantidad} = item
          {/* </div> */}
         </div>
        </div>
-       </section>
+       {/* </section> */}
  </section>
   )
 }

@@ -14,6 +14,7 @@ Descargá el proyecto de este repositorio.
 4. Hice un e-commerce como proyecto utilizando react.
 
 *De igual manera este proyecto esta deployeado en Vercel y puedes visualizarlo en el siguiete link:*
+
 https://ecommerce-react-inky.vercel.app/
 
 ## **Librerías utilizadas**
@@ -28,7 +29,7 @@ https://ecommerce-react-inky.vercel.app/
 ## **Lenguajes y herramientas:**
 - HTML.
 - CSS.
-- JavaScrip.
+- JavaScript.
 - Git Hub.
 - React.js.
 - Webpack.

@@ -4,7 +4,7 @@ import './ItemListContainer.css'
 import ItemList from './ItemList'
 import { useParams } from 'react-router-dom'
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
-
+import Banner from './Banner';
 
 
 const ItemListContainer = () => {
@@ -69,6 +69,7 @@ const ItemListContainer = () => {
           </div>
           <p className='color-p'>Loading...</p>
     </div> }
+    <Banner title={`${ bikes.length > 6 ? "Todas" : bikes[0]?.category}`} />
       <div className='container'>
           <div className='row justify-content-center flex-wrap' >
                <ItemList bikes={bikes}  /> 

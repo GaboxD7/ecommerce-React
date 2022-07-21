@@ -1,8 +1,9 @@
 import React from 'react'
 import './Banner.css'
 const Banner = ({title}) => {
+  console.log(title)
   return (
-    <div className='titulo'> <h2>{title}</h2> </div>
+    <div className='titulo'> <h3>{title }</h3> </div>
   )
 }
 
