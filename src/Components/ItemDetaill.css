@@ -85,5 +85,11 @@
 @media screen  and (min-width:320px) and (max-width:991px) {
     .container-card-detail {
         padding-bottom: 0.5rem;
+        height: 50vh;
+
+       }
+       .container-col-detail {
+        /* height: 50vh; */
+       
        }
 }
